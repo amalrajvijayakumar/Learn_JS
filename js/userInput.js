@@ -7,17 +7,33 @@ const myArray = [];
 myArray[0] = "amal";
 myArray[1] = "raj";
 myArray[2] = 999;
-myArray[2] = true;
+myArray[3] = true;
 
-console.log(myArray.length);
+// console.log(myArray.length);
+// console.log(myArray[1]);
+// console.log(myArray[myArray.length-1]);
 
+// myArray.push("click"); // to add element in the last index
+// console.log(myArray);
+// myArray.pop(); //to delete the element in the last index 
+// console.log(myArray);
+// myArray.unshift("click");
+// console.log(myArray); // to add element in the starting index
+// myArray.shift("click");
+// console.log(myArray);// to delete the element in the starting index
 
+// const lastItem = myArray.push("AMAL"); 
+// console.log(lastItem);// it will print the array's length after add the element but it store in a variable
+// const firstItem = myArray.unshift("AMAL"); // it will print the array's length after add the element but it store in a variable
+// console.log(firstItem);
 
+//But we remove the element it behave opposite example: the output is printing the removed element
+
+const lastItem = myArray.pop(); 
+console.log(lastItem); //it gives a removed element
+const firstItem = myArray.shift();
+console.log(firstItem); //it gives a removed element
 console.log(myArray);
-
-
-
-
 
 // //Scope var, let, const
 // //global scope
