@@ -1,17 +1,18 @@
 //Arrays
-
-
 const myArray = [];
-//adding element
 
 myArray[0] = "amal";
 myArray[1] = "raj";
 myArray[2] = 999;
 myArray[3] = true;
 
+//print the arrays length
+
 // console.log(myArray.length);
 // console.log(myArray[1]);
 // console.log(myArray[myArray.length-1]);
+
+//adding element
 
 // myArray.push("click"); // to add element in the last index
 // console.log(myArray);
