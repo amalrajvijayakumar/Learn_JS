@@ -1,10 +1,62 @@
-//Arrays
-const myArray = [];
 
-myArray[0] = "amal";
-myArray[1] = "raj";
-myArray[2] = 999;
-myArray[3] = true;
+
+
+
+//two dimentional array
+const earnMoneyA = ["frontend", "backend", "fullstock"];
+const earnMoneyB = ["Ai", "blockchain", "DataAnalytics"];
+
+const growMoneyA = ["stocks", 'realEstate', "fixedIncome"];
+const growMoneyB = ["Options", "futures"];
+
+const giveMoney = ["QualityEducation"];
+
+console.log(earnMoneyA[1],growMoneyB[1]);
+
+
+//three dimention array
+const earnMoney = [earnMoneyA, earnMoneyA];
+const growMoney = [growMoneyA, growMoneyB];
+console.log(earnMoney[0][1], growMoney[1][1]);
+
+const Amal = [earnMoney, growMoney, giveMoney];
+console.log(Amal);
+
+console.log(Amal[0][0][1], Amal[1][1][1]);
+
+
+// //Arrays
+// const myArrayA = [];
+
+// myArrayA[0] = "amal";
+// myArrayA[1] = "raj";
+// myArrayA[2] = 999;
+// myArrayA[3] = true;
+
+// console.log(myArrayA);
+
+// myArrayB = ["false", 56, 445];
+
+// console.log(myArrayB);
+
+// //to join the two array
+// const newArray = myArrayA.concat(myArrayB);
+// console.log(newArray);
+
+
+
+// delete myArray[2];// dont use the delete 
+
+// console.log(myArray);
+
+// myArray.splice(0,0, "Amalraj");
+// console.log(myArray); // can add the element in the specified index 
+
+// const newArray = myArray.slice(1,3, "Amalraj");
+// console.log(newArray); //slice create a copy of an old array 
+
+
+
 
 //print the arrays length
 
@@ -30,11 +82,11 @@ myArray[3] = true;
 
 //But we remove the element it behave opposite example: the output is printing the removed element
 
-const lastItem = myArray.pop(); 
-console.log(lastItem); //it gives a removed element
-const firstItem = myArray.shift();
-console.log(firstItem); //it gives a removed element
-console.log(myArray);
+// const lastItem = myArray.pop(); 
+// console.log(lastItem); //it gives a removed element
+// const firstItem = myArray.shift();
+// console.log(firstItem); //it gives a removed element
+// console.log(myArray);
 
 // //Scope var, let, const
 // //global scope
