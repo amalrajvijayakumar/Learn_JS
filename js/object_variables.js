@@ -1,29 +1,41 @@
 //Classes
+//Factory function
+
 class Pizza {
-    constructor(sizePizza) 
-    {    this.size = sizePizza;
-         this.crust = "Original";
+    crust = "original";
+    #sause = "tomato";
+    constructor(sizePizza) {
+        this.size = sizePizza;
     }
     getCrust(){
         return this.crust;
     }
-    setToppings(curstPizza){
-        this.crust = curstPizza;
+    setCrust(crustPizza){
+        this.crust = crustPizza;
+    }  
+    bake(){
+        return console.log(`Baking a ${this.size} ${this.crust} ${this.#sause} pizza `);
     }
-    
 }
 
-class specialPizza extends Pizza {
-    constructor(sizePizza){
-        super(sizePizza);
-        this.type = "Margarita";
-    }
-    slice(){
-        console.log(`Our ${this.type} ${this.size} Pizza has 8 slices`)
-    }
-}
-const mySpecialPizza = new specialPizza("medium");
-mySpecialPizza.slice();
+const myPizza = new Pizza("small");
+myPizza.bake();
+console.log(myPizza.crust());
+
+
+
+//extends
+// class specialPizza extends Pizza {
+//     constructor(sizePizza){
+//         super(sizePizza);
+//         this.type = "Margarita";
+//     }
+//     slice(){
+//         console.log(`Our ${this.type} ${this.size} ${this.crust} Pizza has 8 slices`)
+//     }
+// }
+// const mySpecialPizza = new specialPizza("medium");
+// mySpecialPizza.slice();
 
 
 
