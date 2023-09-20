@@ -1,26 +1,60 @@
-//JSon Java script Object Notation
-//text format 
-//to send and receive data in many programming languages
+//Error and error handling;
+"use strict";
 
-const myObj= {
-    name : "amal",
-    content : ["earn", "grow", "give"],
-    sub : function(){
-        console.log("Thanks for clicking bell icon");
+const makeError = () => {
+    let i =0; 
+    while (i<=5){
+        
+    //try, catch, finally running logice learning
+    try{
+        if (i%2 !==0){
+         throw new Error("Odd Number");
+        }
+        console.log("Even number");
+    //    throw new Error("this is a custom error");
     }
+    catch(err) {
+        console.error(err);
+        // console.table(err);
+    }finally{
+        console.log(",,,finally");
+        i++;
+    }
+}
 };
 
-console.log(myObj);
-console.log(myObj.name);
-myObj.sub();
+makeError();
 
-const sendJSON = JSON.stringify(myObj);
-console.log(sendJSON);
-console.log(typeof sendJSON);
+// function customError (message) {
+//     this.message = this.message;
+//     this.name = "Custom error";
+//     this.stack = `${this.name}:${this.message}`;
 
-const receiveJSOn = JSON.parse(sendJSON);
-console.log(receiveJSOn);
-console.log(receiveJSOn.name);
+// }
+
+//JSon Java script Object Notation
+//text format 
+// //to send and receive data in many programming languages
+
+// const myObj= {
+//     name : "amal",
+//     content : ["earn", "grow", "give"],
+//     sub : function(){
+//         console.log("Thanks for clicking bell icon");
+//     }
+// };
+
+// console.log(myObj);
+// console.log(myObj.name);
+// myObj.sub();
+
+// const sendJSON = JSON.stringify(myObj);
+// console.log(sendJSON);
+// console.log(typeof sendJSON);
+
+// const receiveJSOn = JSON.parse(sendJSON);
+// console.log(receiveJSOn);
+// console.log(receiveJSOn.name);
 
 // //Classes
 // //Factory function
