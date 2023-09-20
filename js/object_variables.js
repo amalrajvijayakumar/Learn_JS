@@ -1,26 +1,50 @@
-//Classes
-//Factory function
+//JSon Java script Object Notation
+//text format 
+//to send and receive data in many programming languages
 
-class Pizza {
-    crust = "original";
-    #sause = "tomato";
-    constructor(sizePizza) {
-        this.size = sizePizza;
+const myObj= {
+    name : "amal",
+    content : ["earn", "grow", "give"],
+    sub : function(){
+        console.log("Thanks for clicking bell icon");
     }
-    getCrust(){
-        return this.crust;
-    }
-    setCrust(crustPizza){
-        this.crust = crustPizza;
-    }  
-    bake(){
-        return console.log(`Baking a ${this.size} ${this.crust} ${this.#sause} pizza `);
-    }
-}
+};
 
-const myPizza = new Pizza("small");
-myPizza.bake();
-console.log(myPizza.crust());
+console.log(myObj);
+console.log(myObj.name);
+myObj.sub();
+
+const sendJSON = JSON.stringify(myObj);
+console.log(sendJSON);
+console.log(typeof sendJSON);
+
+const receiveJSOn = JSON.parse(sendJSON);
+console.log(receiveJSOn);
+console.log(receiveJSOn.name);
+
+// //Classes
+// //Factory function
+
+// class Pizza {
+//     crust = "original";
+//     #sause = "tomato";
+//     constructor(sizePizza) {
+//         this.size = sizePizza;
+//     }
+//     getCrust(){
+//         return this.crust;
+//     }
+//     setCrust(crustPizza){
+//         this.crust = crustPizza;
+//     }  
+//     bake(){
+//         return console.log(`Baking a ${this.size} ${this.crust} ${this.#sause} pizza `);
+//     }
+// }
+
+// const myPizza = new Pizza("small");
+// myPizza.bake();
+// console.log(myPizza.crust());
 
 
 
