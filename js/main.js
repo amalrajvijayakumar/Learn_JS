@@ -1,3 +1,39 @@
+//Module
+
+
+
+
+
+// //Web storage API
+
+// document.addEventListener
+// ("readystatechange", (event) => {
+//     if (event.target.readyState === "complete"){
+//         console.log("Complete");
+//         initApp();
+//     }
+// })
+
+// const initApp = ()=>{
+//     const myContent = ["Earn", "Grow", "Give"];
+//     const myObj = {
+//         name: "Amal",
+//         myContent:["Earn", "Grow", "Give"], 
+//         logName: function(){
+//             console.log(this.name);
+//         }
+//     };
+
+//   localStorage.setItem("mySessionStore", JSON.stringify(myObj));
+//   const key = localStorage.key(0);
+//   console.log(key); 
+//     const mySesionData = JSON.parse(sessionStorage.getItem("mySessionStore"));
+//     console.log(mySesionData);
+// };
+
+
+
+
 //event listeners
 // const view = document.querySelector("#view2");
 // // console.log(view);
@@ -9,23 +45,23 @@
 //syntax
 // .addEventListeners(event, funciton, useCapture)
 
-document.addEventListener
-("readystatechange", (event) => {
-    if (event.target.readyState === "complete"){
-        console.log("Complete");
-        initApp();
-    }
-});
+// document.addEventListener
+// ("readystatechange", (event) => {
+//     if (event.target.readyState === "complete"){
+//         console.log("Complete");
+//         initApp();
+//     }
+// });
 
-//view 3 practices
-const initApp = () => {
-    const view3 = document.querySelector("#view3");
-    const myForm = view3.querySelector("#myForm");
-    myForm.addEventListener("submit", (event) =>{
-        event.preventDefault();
-        console.log("submit event");
-    });
-;}
+// //view 3 practices
+// const initApp = () => {
+//     const view3 = document.querySelector("#view3");
+//     const myForm = view3.querySelector("#myForm");
+//     myForm.addEventListener("submit", (event) =>{
+//         event.preventDefault();
+//         console.log("submit event");
+//     });
+// ;}
 
 
 //View2 Practices
