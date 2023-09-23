@@ -61,7 +61,9 @@ main {
 .black {
     background-color: #000;
 }
-
+.green{
+    background-color: green;
+}
 nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -199,7 +201,7 @@ and display:flex for the example you want to see. */
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    display: none;
+    display: flex;
     background-color: #d3d3d3;
     border: 1px solid #000;
     max-width: 400px;

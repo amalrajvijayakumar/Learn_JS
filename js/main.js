@@ -17,27 +17,35 @@ document.addEventListener
     }
 });
 
-const initApp  =() =>{
+const initApp  = () => {
     const view = document.querySelector("#view2");
     const div = view.querySelector("div");
     const h2 = div.querySelector("h2");
 
     view.addEventListener("click", (event)=>
     {
-        event.stopPropagation();
-        view.style.backgroundColor ="purple";
-    }),true)
+        // event.stopPropagation();
+        // event.target.style.backgroundColor ="purple";
+        view.classList.toggle("purple");
+        view.classList.toggle("darkblue");
+    })
 
     div.addEventListener("click", (event)=>
     {
-        div.style.backgroundColor ="blue";
-    }), true)
+        // event.stopPropagation();
+
+        div.classList.toggle("green");
+        div.classList.toggle("black");
+        // event.target.style.backgroundColor ="darkblue";
+    })
 
     h2.addEventListener("click", (event)=>
     {
-        event.stopPropagation();
-        event.target.textContent ="Subscribed";
-    }, true)
+        // event.stopPropagation();
+        const myText = event.target.textContent;
+        myText === "Subscribe" ? (event.target.textContent = "Subscribed"):(event.target.textContent = "Subscribe");
+        
+    })
 
 };
 
