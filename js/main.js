@@ -1,8 +1,8 @@
 //event listeners
-const view = document.querySelector("#view2");
-// console.log(view);
-const div = view.querySelector("div");
-const h2 = div.querySelector("h2");
+// const view = document.querySelector("#view2");
+// // console.log(view);
+// const div = view.querySelector("div");
+// const h2 = div.querySelector("h2");
 
 // console.log(h2);
 
@@ -17,37 +17,57 @@ document.addEventListener
     }
 });
 
-const initApp  = () => {
-    const view = document.querySelector("#view2");
-    const div = view.querySelector("div");
-    const h2 = div.querySelector("h2");
+//view 3 practices
+const initApp = () => {
+    const view3 = document.querySelector("#view3");
+    const myForm = view3.querySelector("#myForm");
+    myForm.addEventListener("submit", (event) =>{
+        event.preventDefault();
+        console.log("submit event");
+    });
+;}
 
-    view.addEventListener("click", (event)=>
-    {
-        // event.stopPropagation();
-        // event.target.style.backgroundColor ="purple";
-        view.classList.toggle("purple");
-        view.classList.toggle("darkblue");
-    })
 
-    div.addEventListener("click", (event)=>
-    {
-        // event.stopPropagation();
+//View2 Practices
+// const initApp  = () => {
+//     const view = document.querySelector("#view2");
+//     const div = view.querySelector("div");
+//     const h2 = div.querySelector("h2");
 
-        div.classList.toggle("green");
-        div.classList.toggle("black");
-        // event.target.style.backgroundColor ="darkblue";
-    })
+//     view.addEventListener("click", (event)=>
+//     {
+//         // event.stopPropagation();
+//         // event.target.style.backgroundColor ="purple";
+//         view.classList.toggle("purple");
+//         view.classList.toggle("darkblue");
+//     })
 
-    h2.addEventListener("click", (event)=>
-    {
-        // event.stopPropagation();
-        const myText = event.target.textContent;
-        myText === "Subscribe" ? (event.target.textContent = "Subscribed"):(event.target.textContent = "Subscribe");
+//     div.addEventListener("click", (event)=>
+//     {
+//         // event.stopPropagation();
+
+//         div.classList.toggle("green");
+//         div.classList.toggle("black");
+//         // event.target.style.backgroundColor ="darkblue";
+//     })
+
+//     h2.addEventListener("click", (event)=>
+//     {
+//         // event.stopPropagation();
+//         const myText = event.target.textContent; 
+//         myText === "Subscribe" ? (event.target.textContent = "Subscribed"):(event.target.textContent = "Subscribe");
         
-    })
+//     })
 
-};
+// };
+
+// const nav = document.querySelector("nav");
+// nav.addEventListener("mouseover", (event) =>{
+//     event.target.classList.add("height100");
+// });
+// nav.addEventListener("mouseout", (event) =>{
+//     event.target.classList.remove("height100"); 
+// });
 
 
 // const doSomething = () => {
