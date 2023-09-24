@@ -1,8 +1,19 @@
+//Higher Order functions
+    
+
+
+
+
 //Module
+// import *  as Amal from "./module.js";
+// import Susbscriber from "./module.js";
 
+// const me = new Susbscriber("Amal");
+// console.log(me.emailme());
 
-
-
+// console.log(Amal.earnMoney());
+// console.log(Amal.growMoney());
+// console.log(Amal.giveMoney());
 
 // //Web storage API
 
